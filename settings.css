@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #003399;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background: #3366cc;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    border-bottom: 4px solid #003366;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 18px 24px 10px 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+nav {
+    display: contents;
+    padding: 0 24px;
+    margin: 0 0 24px 0;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #ffdb58;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffdb58;
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+.side-nav {
+    width: 200px;
+    background: #3366cc;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px 0 0 10px;
+    margin-right: 20px;
+}
+.side-nav h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.side-nav ul li {
+    margin-bottom: 10px;
+}
+.side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.side-nav ul li a:hover {
+    color: #ffdb58;
+}
+
+.main-content {
+    background: #3366cc;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 0 10px 10px 0;
+    flex-grow: 1;
+}
+.main-content h2 {
+    color: #ffcc33;
+    margin-bottom: 20px;
+}
+
+.settings-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffcc33;
+    font-weight: bold;
+}
+.settings-form input,
+.settings-form select,
+.settings-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+}
+.settings-form input[type='submit'] {
+    background: #ffcc33;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.settings-form input[type='submit']:hover {
+    background: #ffdb58;
+}

@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0c4de;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border: 2px solid #ccc;
+}
+
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #999;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#profile-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #eee;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+}
+
+#profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    border: 3px solid #999;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+#profile-details {
+    margin-left: 150px;
+    font-size: 14px;
+}
+
+#friends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.friend img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 2px solid #999;
+}
+
+/* Old MySpace Footer */
+footer {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
