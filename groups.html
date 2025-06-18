@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Groups</title>
+    <link rel="stylesheet" href=../static/css/groups.css>
+    <script src="../static/js/groups.js"></script>
+    <script src="../static/json/groups.json"></script>
+    <script src="../py/groups.py"></script>
+</head>
+<body>
+    <header>
+        <h1>Groups / 90's Reborn</h1>
+        <nav>
+            <ul>
+                <li><a href="../template/homepage.html">Home | </a></li>
+                <li><a href="../template/browse.html">Browse | </a></li>
+                <li><a href="../template/search.html">Search | </a></li>
+                <li><a href="../template/invite.html">Invite | </a></li>
+                <li><a href="../template/mail.html">Mail | </a></li>
+                <li><a href="../template/settings.html">Settings | </a></li>
+                <li><a href="../template/groups.html" class="active">Groups | </a></li>
+                <li><a href="../template/videos.html">videos | </a></li>
+                <li><a href="../template/music.html">Music | </a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h2>Search Groups</h2>
+        <form id="search-form" action="{{ url_for('groups') }}" method="get">
+            <label for="search">Search by Name</label>
+            <input id="search" name="search" type="text" placeholder="Enter group name">
+            <button type="submit">Search</button>
+            </select>
+        </form>
+        <section id="search-results-section">
+            <h2>Search Results</h2>
+            <ul id="search-results"></ul></section>
+    <section id="groups-section">
+        <h2>Groups</h2>
+            <ul id="groups-list">
+                <li><a href="{{ url_for('group_detail', group_id=group.id) }}">Group Name</a></li>
+            </ul>
+    </section>
+    <section id="create-group-section">
+        <h2>Create Your Own Group</h2>
+            <form id="create-form" action="{{ url_for('create_group') }}" method="post">
+                <label for="group-name">Group Name</label>
+                <input id="group-name" name="name" type="text" required>
+                <label for="group-category">Category</label>
+                <select id="group-category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Food">Food</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="group-type">Type</label>
+                <select id="group-type" name="type" required>
+                    <option value="">Select a type</option>
+                    <option value="Public">Public</option>
+                    <option value="Private">Private</option>
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                </select>
+                <section id="group-members-section">
+                    <label for="group-members">
+                    Members:</label><input id="group-members" name="members" type="text" required placeholder="Enter member name">
+                </section>
+                    <button type="submit">Add a Member</button>
+
+                <label for="group-location">Location</label>
+                <input id="group-location" name="location" type="text" required>
+                <button type="submit">Add Location</button>
+
+                <label for="group-description">Description</label>
+                <textarea id="group-description" name="description" rows="5" required></textarea>
+                <button type="submit">Enter Description</button>
+            </form>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 90's Reborn / Kingdesign22. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

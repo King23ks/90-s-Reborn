@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristyna's Profile / King-Designs22</title>
+    <link rel="stylesheet" href="../static/css/stylesheet.css">
+    <script src="../static/js/homescript.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Home Page / 90's Reborn</h1>
+        <nav>
+            <ul>
+                <li><a href="../template/homepage.html" class="active">Home</a></li>
+                <li><a href="../template/browse.html">Browse</a></li>
+                <li><a href="../template/search.html">Search</a></li>
+                <li><a href="../template/invite.html">Invite</a></li>
+                <li><a href="../template/mail.html">Mail</a></li>
+                <li><a href="../template/settings.html">Settings</a></li>
+                <li><a href="../template/groups.html">Groups</a></li>
+                <li><a href="../template/videos.html">videos</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div id="layout">
+        <aside id="sidebar">
+            <section id="profile">
+                <img src="../images/kristyna.jpg" alt="Kristyna's Profile Picture">
+                <h2>Kristyna / King-Designs22</h2>
+                    <p><strong>Age:</strong> 33</p>
+                    <p><strong>Location:</strong> Lancaster, CA</p>
+                    <p><strong>Last Login:</strong> Today</p>
+                    <p><strong>Current Mood:</strong><span id="CurrentMood">Productive</span></p>
+            </section>
+                <section id="settings">
+                    <h3>Settings</h3>
+                    <label for="theme">Change Theme:</label>
+                    <select id="theme">
+                        <option>Light</option>
+                        <option>Dark</option>
+                        <option>System Default</option>
+                        <option>Custom</option>
+                    </select>
+                    <button id="changeThemeBtn" type="button">Change Theme</button>
+                    <br>
+                    <label for="language">Change Language:</label>
+                    <select id="language">
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Japanese</option>
+                        <option>Korean</option>
+                        <option>Russian</option>
+                        <option>Chinese</option>
+                        <option>Arabic</option>
+                        <option>Portuguese</option>
+                    </select>
+                    <button id="changeLanguageBtn" type="button">Change Language</button>
+                    <br>
+                    <br>
+                    <!-- Mood Selector -->
+                    <label for="mood">Change Mood:</label>
+                    <select id="mood">
+                        <option>Happy</option>
+                        <option>Sad</option>
+                        <option>Angry</option>
+                        <option>Neutral</option>
+                        <option>Surprised</option>
+                        <option>Confused</option>
+                        <option>Bored</option>
+                        <option>Tired</option>
+                        <option>Grumpy</option>
+                        <option>Stressed</option>
+                        <option>Anxious</option>
+                        <option>Excited</option>
+                        <option>Calm</option>
+                        <option>Energetic</option>
+                        <option>Focused</option>
+                        <option>Chill</option>
+                        <option>Productive</option>
+                    </select>
+                    <button id="changeMoodBtn" type="button">Change Mood</button>
+                </section>
+
+                <section id="contact">
+                    <h3>Contacting Kristyna / King-Designs22</h3>
+                    <ul>
+                        <li><a href="#">Send Message</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Add to Friends</a></li>
+                        <li><a href="#">Instant Message</a></li>
+                        <li><a href="#">Join Group</a></li>
+                        <li><a href="#">Leave Group</a></li>
+                        <li><a href="#">Block User</a></li>
+                        <li><a href="#">Unblock User</a></li>
+                        <li><a href="#">Report User</a></li>
+                    </ul>
+                </section>
+            </aside>
+            <section id="main-content">
+                <div class="section-box">
+                    <h3>Kristyna's Blurbs</h3>
+                    <p><strong>About Me:</strong> Working on 90's Reborn MySpace 2.0 improvements...</p>
+                    <p><strong>Hobbies:</strong> Automotive, Computer Science</p>
+
+                    <p><strong>Who I'd Like to Meet:</strong> Creative people passionate about tech!</p>
+                </div>
+                <div class="section-box">
+                    <h3>King-designs22 Top 8 Friends</h3>
+                    <div class="friend-list">
+                        <label for="friend-list"></label>
+                        <ul>
+                            <li><a href="#" id="friend1">Friend 1</a></li>
+                            <li><a href="#" id="friend2">Friend 2</a></li>
+                            <li><a href="#" id="friend3">Friend 3</a></li>
+                            <li><a href="#" id="friend4">Friend 4</a></li>
+                            <li><a href="#" id="friend5">Friend 5</a></li>
+                            <li><a href="#" id="friend6">Friend 6</a></li>
+                            <li><a href="#" id="friend7">Friend 7</a></li>
+                            <li><a href="#" id="friend8">Friend 8</a></li>
+                            <li><a href="#" id="friend9">Friend 9</a></li>
+                            <li><a href="#" id="friend10">Friend 10</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section-box">
+                    <h3>Kristyna's / King-Designs22's Profile Song</h3>
+                    <audio controls>
+                        <source src="myspace-song.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="section-box" id="latest-blog">
+                    <h3>Latest Blog Entry</h3>
+                    <p><strong>Title:</strong> King-Designs22 / 90's Reborn</p>
+                    <p>Topics: New homepage, friend counts, extended network...</p>
+                </div>
+            </section>
+    </div>
+</main>
+
+        <footer>
+            <p>&copy; 2025 90's Reborn / King-Designs22. All rights reserved.</p>
+        </footer>
+</body>
+</html>

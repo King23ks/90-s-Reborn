@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90's Reborn Mail Inbox</title>
+    <link rel="stylesheet" href="../static/css/mail.css">
+    <script src="../static/js/mail.js" defer></script>
+</head>
+    <body>
+        <header class="mail-header">
+            <h1>Mail Page / 90's Reborn</h1>
+            <nav>
+                <ul>
+                    <li><a href="../template/homepage.html">Home</a></li>
+                    <li><a href="../template/browse.html">Browse</a></li>
+                    <li><a href="../template/mail.html" class="active">Mail</a></li>
+                    <li><a href="../template/settings.html">Settings</a></li>
+                    <li><a href="../template/invite.html">Invite</a></li>
+                    <li><a href="../template/groups.html">Groups</a></li>
+                    <li><a href="../template/search.html">Search</a></li>
+                    <li><a href="../template/videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mail-inbox-layout">
+            <aside class="mail-sidebar">
+                <ul>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Sent</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Spam</a></li>
+                    <li><a href="#">Trash</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Compose</a></li>
+                </ul>
+            </aside>
+            <section class="mail-main">
+                <h2>Inbox</h2>
+                <table class="mail-inbox-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" aria-label="Select all messages"></th>
+                            <th>From</th>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="unread" id="mail-msg1">
+                            <td><input type="checkbox" aria-label="Select message from Kristyna about 90's Reborn"></td>
+                            <td>Kristyna / King-Designs22</td>
+                            <td><a href="#" onclick="showMessage('msg1'); return false;">Welcome to 90's Reborn</a></td>
+                            <td>06/16/2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="msg1" class="mail-message-view">
+                    <strong>From:</strong> Kristyna / 90's Reborn<br>
+                    <strong>Subject:</strong> Welcome to 90's Reborn<br>
+                    <strong>Date:</strong> 06/16/2025<br><br>
+                    Hey there! Welcome to your new MySpace inbox. Enjoy!
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2025 King-Designs22 90's Reborn MySpace 2.0. All rights reserved.
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - MySpace 2.0</title>
+    <link rel="stylesheet" href="../static/css/videos.css">
+    <script src="../static/js/videos.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Videos Search / 90's Reborn</h1>
+        <nav>
+            <ul>
+                <li><a href="../template/homepage.html">Home</a></li>
+                <li><a href="../template/browse.html">Browse</a></li>
+                <li><a href="../template/search.html">Search</a></li>
+                <li><a href="../template/invite.html">Invite</a></li>
+                <li><a href="../template/mail.html">Mail</a></li>
+                <li><a href="../template/settings.html">Settings</a></li>
+                <li><a href="../template/groups.html">Groups</a></li>
+                <li><a href="../template/videos.html" class="active">videos</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h2>Videos</h2>
+        <p>This is the videos page. You can upload and view videos here.</p>
+        <form action="{{ url_for('upload_video') }}" method="post" enctype="multipart/form-data" aria-label="Upload Video Form">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label for="video-upload">Choose a video to upload:</label>
+            <br>
+            <input type="file" name="video" id="video-upload" required title="Select a video file">
+            <button type="submit">Upload Video</button>
+            <br>
+        </form>
+        <br>
+        <div class="video-grid">
+            <div class="video-item">
+                <video controls>
+                    <source src="{{ url_for('static', filename='videos/video1.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+</main>
+
+    <footer>
+        <p>&copy; 90's Reborn / Kingdesign22. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
